@@ -1,0 +1,23 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "lean6x7mbt/tests/intmode"
+
+// Values
+pub fn collatz(Int32, Int32) -> Int32
+
+pub fn ediv(Int32, Int32) -> Int32
+
+pub fn emod(Int32, Int32) -> Int32
+
+pub fn fact(Int32) -> Int32
+
+pub fn powTwo(Int32) -> Int32
+
+pub fn sub3(Int32) -> Int32
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+
+// Traits

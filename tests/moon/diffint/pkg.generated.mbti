@@ -1,0 +1,31 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "lean6x7mbt/tests/diffint"
+
+// Values
+pub fn clamp(Int32, Int32, Int32) -> Int32
+
+pub fn fib(Int32) -> Int32
+
+pub fn[A, B] list_foldl((A) -> (B) -> A, A, List[B]) -> A
+
+pub fn list_range(Int32) -> List[Int32]
+
+pub fn list_range_loop(Int32, List[Int32]) -> List[Int32]
+
+pub fn mix(Int32, Int32) -> Int32
+
+pub fn natSub(Int32, Int32) -> Int32
+
+pub fn sumSq(Int32) -> Int32
+
+// Errors
+
+// Types and methods
+pub(all) enum List[A] {
+  Nil
+  Cons(A, List[A])
+}
+
+// Type aliases
+
+// Traits

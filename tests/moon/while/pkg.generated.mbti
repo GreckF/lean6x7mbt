@@ -1,0 +1,83 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "lean6x7mbt/tests/while"
+
+import {
+  "moonbitlang/core/bigint",
+}
+
+// Values
+pub fn deepExcept(@bigint.BigInt) -> Result[@bigint.BigInt, String]
+
+pub fn deepFor(@bigint.BigInt) -> Result[@bigint.BigInt, String]
+
+pub fn deepList(@bigint.BigInt) -> Result[@bigint.BigInt, String]
+
+pub fn deepState(@bigint.BigInt) -> @bigint.BigInt
+
+pub fn deepStateExcept(@bigint.BigInt) -> Result[(@bigint.BigInt, @bigint.BigInt), String]
+
+pub fn[A] lean6x7mbt_loopForIn_spec1((Unit) -> (A) -> ForInStep[A], A) -> A
+
+pub fn[A] lean6x7mbt_loopForIn_spec3((Unit) -> (A) -> Result[ForInStep[A], String], A) -> Result[A, String]
+
+pub fn[A] lean6x7mbt_loopForIn_spec6((Unit) -> (A) -> (@bigint.BigInt) -> (ForInStep[A], @bigint.BigInt), A, @bigint.BigInt) -> (A, @bigint.BigInt)
+
+pub fn[A] lean6x7mbt_loopForIn_spec7((Unit) -> (A) -> (@bigint.BigInt) -> Result[(ForInStep[A], @bigint.BigInt), String], A, @bigint.BigInt) -> Result[(A, @bigint.BigInt), String]
+
+pub fn[A, B] list_forIn__loop_spec5(List[A], (A) -> (B) -> Result[ForInStep[B], String], List[A], B) -> Result[B, String]
+
+pub fn list_range(@bigint.BigInt) -> List[@bigint.BigInt]
+
+pub fn list_range_loop(@bigint.BigInt, List[@bigint.BigInt]) -> List[@bigint.BigInt]
+
+pub fn runWhileState(@bigint.BigInt) -> @bigint.BigInt
+
+pub fn[A] std_Legacy_Range_forIn__loop_spec2(Std_Legacy_Range, (@bigint.BigInt) -> (A) -> ForInStep[A], A, @bigint.BigInt) -> A
+
+pub fn[A] std_Legacy_Range_forIn__loop_spec4(Std_Legacy_Range, (@bigint.BigInt) -> (A) -> Result[ForInStep[A], String], A, @bigint.BigInt) -> Result[A, String]
+
+pub let unit_unit : Unit
+
+pub fn whileBreak(@bigint.BigInt) -> @bigint.BigInt
+
+pub fn whileExcept(@bigint.BigInt) -> Result[@bigint.BigInt, String]
+
+pub fn whileFor(@bigint.BigInt) -> @bigint.BigInt
+
+pub fn whileLoop(@bigint.BigInt) -> @bigint.BigInt
+
+pub fn whileNever(@bigint.BigInt) -> @bigint.BigInt
+
+pub fn whileReturn(@bigint.BigInt) -> @bigint.BigInt
+
+pub fn whileState(@bigint.BigInt) -> (@bigint.BigInt) -> (Unit, @bigint.BigInt)
+
+pub fn whileWhile(@bigint.BigInt) -> @bigint.BigInt
+
+// Errors
+
+// Types and methods
+pub(all) enum ForInStep[A] {
+  Done(A)
+  Yield(A)
+}
+
+pub(all) enum List[A] {
+  Nil
+  Cons(A, List[A])
+}
+
+pub(all) struct MProd[A, B] {
+  fst : A
+  snd : B
+}
+
+pub(all) struct Std_Legacy_Range {
+  start : @bigint.BigInt
+  stop : @bigint.BigInt
+  step : @bigint.BigInt
+}
+
+// Type aliases
+
+// Traits

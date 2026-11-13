@@ -1,0 +1,3 @@
+import {
+  "lean6x7mbt/tests/extlib" @extlib,
+}

@@ -1,0 +1,128 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "lean6x7mbt/tests/diff"
+
+import {
+  "moonbitlang/core/bigint",
+}
+
+// Values
+pub fn arith(@bigint.BigInt, @bigint.BigInt) -> @bigint.BigInt
+
+pub fn[A] array_isEqvAux(Array[A], Array[A], (A) -> (A) -> Bool, @bigint.BigInt) -> Bool
+
+pub fn collatz(@bigint.BigInt, @bigint.BigInt) -> @bigint.BigInt
+
+pub fn divmod(@bigint.BigInt, @bigint.BigInt) -> (@bigint.BigInt, @bigint.BigInt)
+
+pub fn evens(@bigint.BigInt) -> List[@bigint.BigInt]
+
+pub fn firstBig(List[@bigint.BigInt]) -> @bigint.BigInt?
+
+pub fn fromList(List[@bigint.BigInt]) -> Tree[@bigint.BigInt]
+
+pub fn gcd_(@bigint.BigInt, @bigint.BigInt) -> @bigint.BigInt
+
+pub fn[A, B] instBEqExcept_tests_beq(BEq[A], BEq[B], Result[B, A], Result[B, A]) -> Bool
+
+pub fn[A] instBEqOfDecidableEq((A) -> (A) -> Bool) -> BEq[A]
+
+pub fn[A, B] instBEqProd(BEq[A], BEq[B]) -> BEq[(A, B)]
+
+pub fn instBEqPt_beq(Pt, Pt) -> Bool
+
+pub fn instBEqShape_beq(Shape, Shape) -> Bool
+
+pub fn[A] instBEqTree_beq(BEq[A], Tree[A], Tree[A]) -> Bool
+
+pub let instNatCastInt : NatCast[@bigint.BigInt]
+
+pub fn intArith(@bigint.BigInt, @bigint.BigInt) -> @bigint.BigInt
+
+pub fn isEven(@bigint.BigInt) -> Bool
+
+pub fn isOdd(@bigint.BigInt) -> Bool
+
+pub fn isPrime(@bigint.BigInt) -> Bool
+
+pub fn[A] list_all(List[A], (A) -> Bool) -> Bool
+
+pub fn[A] list_append(List[A], List[A]) -> List[A]
+
+pub fn[A] list_beq(BEq[A], List[A], List[A]) -> Bool
+
+pub fn[A] list_filter((A) -> Bool, List[A]) -> List[A]
+
+pub fn[A] list_find_((A) -> Bool, List[A]) -> A?
+
+pub fn[A, B] list_foldl((A) -> (B) -> A, A, List[B]) -> A
+
+pub fn[A, B] list_map((A) -> B, List[A]) -> List[B]
+
+pub fn list_range(@bigint.BigInt) -> List[@bigint.BigInt]
+
+pub fn list_range_loop(@bigint.BigInt, List[@bigint.BigInt]) -> List[@bigint.BigInt]
+
+pub fn[A] nat_cast(NatCast[A]) -> (@bigint.BigInt) -> A
+
+pub fn nextChar(Char) -> Char
+
+pub fn[A] option_instBEq_beq(BEq[A], A?, A?) -> Bool
+
+pub fn pairs(List[@bigint.BigInt]) -> List[(@bigint.BigInt, String)]
+
+pub fn pt_shift(Pt, @bigint.BigInt) -> Pt
+
+pub fn safeDiv(@bigint.BigInt, @bigint.BigInt) -> Result[@bigint.BigInt, String]
+
+pub fn shape_area(Shape) -> @bigint.BigInt
+
+pub fn shape_grow(Shape, @bigint.BigInt) -> Shape
+
+pub fn shout(String) -> String
+
+pub fn sq(Array[@bigint.BigInt]) -> Array[@bigint.BigInt]
+
+pub let t0 : Tree[@bigint.BigInt]
+
+pub fn tree_insert(Tree[@bigint.BigInt], @bigint.BigInt) -> Tree[@bigint.BigInt]
+
+pub fn[A] tree_size(Tree[A]) -> @bigint.BigInt
+
+pub fn[A] tree_toList(Tree[A]) -> List[A]
+
+// Errors
+
+// Types and methods
+pub(all) struct BEq[A] {
+  beq : (A) -> (A) -> Bool
+}
+
+pub(all) enum List[A] {
+  Nil
+  Cons(A, List[A])
+}
+
+pub(all) struct NatCast[A] {
+  natCast : (@bigint.BigInt) -> A
+}
+
+pub(all) struct Pt {
+  x : @bigint.BigInt
+  y : @bigint.BigInt
+  tag : String
+}
+
+pub(all) enum Shape {
+  Circle(@bigint.BigInt)
+  Rect(@bigint.BigInt, @bigint.BigInt)
+  Empty
+}
+
+pub(all) enum Tree[A] {
+  Leaf
+  Node(Tree[A], A, Tree[A])
+}
+
+// Type aliases
+
+// Traits

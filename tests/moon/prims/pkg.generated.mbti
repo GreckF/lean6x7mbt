@@ -1,0 +1,49 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "lean6x7mbt/tests/prims"
+
+import {
+  "moonbitlang/core/bigint",
+}
+
+// Values
+pub fn arrGet(Array[@bigint.BigInt], @bigint.BigInt) -> @bigint.BigInt
+
+pub fn arrGetD(Array[@bigint.BigInt], @bigint.BigInt) -> @bigint.BigInt
+
+pub fn arrMap(Array[@bigint.BigInt]) -> Array[@bigint.BigInt]
+
+pub fn arrPush(Array[@bigint.BigInt], @bigint.BigInt) -> Array[@bigint.BigInt]
+
+pub fn arrSet(Array[@bigint.BigInt], @bigint.BigInt, @bigint.BigInt) -> Array[@bigint.BigInt]
+
+pub fn arrSize(Array[@bigint.BigInt]) -> @bigint.BigInt
+
+pub fn arrSum(Array[@bigint.BigInt]) -> @bigint.BigInt
+
+pub fn chr(@bigint.BigInt) -> Char
+
+pub fn flt(Double) -> Double
+
+pub let mkArr : Array[@bigint.BigInt]
+
+pub fn nToStr(@bigint.BigInt) -> String
+
+pub fn str1(String) -> String
+
+pub fn strLen(String) -> @bigint.BigInt
+
+pub fn u64(UInt64, UInt64) -> UInt64
+
+pub fn u8(Byte) -> Byte
+
+// Errors
+
+// Types and methods
+pub(all) enum List[A] {
+  Nil
+  Cons(A, List[A])
+}
+
+// Type aliases
+
+// Traits

@@ -1,0 +1,48 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "lean6x7mbt/tests_proj/proj_a"
+
+import {
+  "lean6x7mbt/tests_proj/lean_core",
+  "moonbitlang/core/bigint",
+}
+
+// Values
+pub fn projA_Shape_area(ProjA_Shape) -> @bigint.BigInt
+
+pub fn projA_arrSum(Array[@bigint.BigInt]) -> @bigint.BigInt
+
+pub fn[A] projA_instBEqPt_beq(@lean_core.BEq[A], ProjA_Pt[A], ProjA_Pt[A]) -> Bool
+
+pub fn projA_instBEqShape_beq(ProjA_Shape, ProjA_Shape) -> Bool
+
+pub let projA_instHasAreaShape : ProjA_HasArea[ProjA_Shape]
+
+pub fn projA_minus3(@bigint.BigInt) -> @bigint.BigInt
+
+pub fn[A] projA_mkPt(A, @bigint.BigInt) -> ProjA_Pt[A]
+
+pub fn projA_sumTo(@bigint.BigInt) -> @bigint.BigInt
+
+pub fn[A] std_Legacy_Range_forIn__loop_spec3(@lean_core.Std_Legacy_Range, (@bigint.BigInt) -> (A) -> @lean_core.ForInStep[A], A, @bigint.BigInt) -> A
+
+// Errors
+
+// Types and methods
+pub(all) struct ProjA_HasArea[A] {
+  area : (A) -> @bigint.BigInt
+}
+
+pub(all) struct ProjA_Pt[A] {
+  x : A
+  y : @bigint.BigInt
+}
+
+pub(all) enum ProjA_Shape {
+  Circle(@bigint.BigInt)
+  Rect(@bigint.BigInt, @bigint.BigInt)
+  Unit
+}
+
+// Type aliases
+
+// Traits

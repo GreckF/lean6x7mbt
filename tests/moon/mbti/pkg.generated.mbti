@@ -1,0 +1,139 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "lean6x7mbt/tests/mbti"
+
+import {
+  "lean6x7mbt/tests/extlib",
+  "moonbitlang/core/bigint",
+}
+
+// Values
+pub fn addAll(@bigint.BigInt, @bigint.BigInt, @bigint.BigInt) -> @bigint.BigInt
+
+pub fn addOne(@bigint.BigInt) -> (@bigint.BigInt) -> @bigint.BigInt
+
+pub fn addTwice(@bigint.BigInt) -> @bigint.BigInt
+
+pub fn adder5(@bigint.BigInt) -> @bigint.BigInt
+
+pub fn adders(List[@bigint.BigInt]) -> List[@bigint.BigInt]
+
+pub fn areaOf(@extlib.Shape) -> Double
+
+pub let areas : List[Double]
+
+pub fn arrSum(Array[@bigint.BigInt]) -> @bigint.BigInt
+
+pub fn bigTwice(UInt64) -> UInt64
+
+pub fn bothVowels(Char, Char) -> Bool
+
+pub fn boxDemo(@bigint.BigInt) -> @bigint.BigInt
+
+pub fn boxStr(String) -> String
+
+pub fn counterDemo(@bigint.BigInt) -> @bigint.BigInt
+
+pub fn counters(List[@bigint.BigInt]) -> List[@bigint.BigInt]
+
+pub fn digitErr(String) -> String
+
+pub fn digitOr(String, @bigint.BigInt) -> @bigint.BigInt
+
+pub fn firstEvenOr(Array[@bigint.BigInt], @bigint.BigInt) -> @bigint.BigInt
+
+pub fn greet(String) -> String
+
+pub let hello : String
+
+pub fn incOpt(@bigint.BigInt?) -> @bigint.BigInt?
+
+pub fn incTwice(@bigint.BigInt) -> @bigint.BigInt
+
+pub fn labelledOnly(@bigint.BigInt) -> @bigint.BigInt
+
+pub fn[A, B] list_forIn__loop_spec1(List[A], (A) -> (B) -> ForInStep[B], List[A], B) -> B
+
+pub fn[A, B] list_map((A) -> B, List[A]) -> List[B]
+
+pub fn loopAdd(@bigint.BigInt) -> @bigint.BigInt
+
+pub fn lowByteOf(UInt32) -> Byte
+
+pub fn mapAdd(List[@bigint.BigInt]) -> List[@bigint.BigInt]
+
+pub fn mapSucc(List[@bigint.BigInt]) -> List[@bigint.BigInt]
+
+pub fn orDefault(@bigint.BigInt?) -> @bigint.BigInt
+
+pub fn pairSum((@bigint.BigInt) -> (@bigint.BigInt) -> @bigint.BigInt, @bigint.BigInt) -> @bigint.BigInt
+
+pub fn pairSumAdd(@bigint.BigInt) -> @bigint.BigInt
+
+pub fn pairSumPartial(@bigint.BigInt) -> @bigint.BigInt
+
+pub let pointLit : @extlib.Point
+
+pub fn pointMatch(@extlib.Point) -> @bigint.BigInt
+
+pub fn pointNorm(@bigint.BigInt, @bigint.BigInt) -> @bigint.BigInt
+
+pub fn pointSum(@extlib.Point) -> @bigint.BigInt
+
+pub fn pointSwap(@extlib.Point) -> @extlib.Point
+
+pub fn quarter(Double) -> Double
+
+pub fn rangeSum(@bigint.BigInt) -> @bigint.BigInt
+
+pub let sampleDepth : @bigint.BigInt
+
+pub let sampleSize : @bigint.BigInt
+
+pub let sampleTree : @extlib.Tree[@bigint.BigInt]
+
+pub fn shapeName(@extlib.Shape) -> String
+
+pub fn[A] std_Legacy_Range_forIn__loop_spec2(Std_Legacy_Range, (@bigint.BigInt) -> (A) -> ForInStep[A], A, @bigint.BigInt) -> A
+
+pub fn succTwice(@bigint.BigInt) -> @bigint.BigInt
+
+pub fn succTwiceHO(@bigint.BigInt) -> @bigint.BigInt
+
+pub fn sumSucc(List[@bigint.BigInt]) -> @bigint.BigInt
+
+pub fn swapped(@bigint.BigInt, String) -> (String, @bigint.BigInt)
+
+pub let theAnswer : @bigint.BigInt
+
+pub fn thunk(@bigint.BigInt) -> @bigint.BigInt
+
+pub fn treeSum(@extlib.Tree[@bigint.BigInt]) -> @bigint.BigInt
+
+pub fn twiceStr(String) -> (String, String)
+
+pub let unit_unit : Unit
+
+pub fn useMax(@bigint.BigInt) -> @bigint.BigInt
+
+// Errors
+
+// Types and methods
+pub(all) enum ForInStep[A] {
+  Done(A)
+  Yield(A)
+}
+
+pub(all) enum List[A] {
+  Nil
+  Cons(A, List[A])
+}
+
+pub(all) struct Std_Legacy_Range {
+  start : @bigint.BigInt
+  stop : @bigint.BigInt
+  step : @bigint.BigInt
+}
+
+// Type aliases
+
+// Traits

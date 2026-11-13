@@ -1,0 +1,114 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "lean6x7mbt/tests/advanced"
+
+import {
+  "moonbitlang/core/bigint",
+}
+
+// Values
+pub fn addOpt(@bigint.BigInt?, @bigint.BigInt?) -> @bigint.BigInt?
+
+pub let big : @bigint.BigInt
+
+pub fn bigMul(@bigint.BigInt) -> @bigint.BigInt
+
+pub fn color_ctorIdx(Color) -> @bigint.BigInt
+
+pub fn color_next(Color) -> Color
+
+pub fn config_bump(Config) -> Config
+
+pub let defColor : Color
+
+pub fn divAll(List[@bigint.BigInt], @bigint.BigInt) -> Result[List[@bigint.BigInt], String]
+
+pub fn expr_eval(Expr) -> @bigint.BigInt
+
+pub fn expr_simp(Expr) -> Expr
+
+pub fn filterEven(List[@bigint.BigInt]) -> List[@bigint.BigInt]
+
+pub fn firstOr(List[@bigint.BigInt], @bigint.BigInt) -> @bigint.BigInt
+
+pub fn instBEqColor_beq(Color, Color) -> Bool
+
+pub let instInhabitedColor_default : Color
+
+pub let instShapeSquare : Shape[Square]
+
+pub fn lastOf(List[@bigint.BigInt]) -> @bigint.BigInt?
+
+pub fn lengthOf(List[@bigint.BigInt]) -> @bigint.BigInt
+
+pub fn[A] list_filter((A) -> Bool, List[A]) -> List[A]
+
+pub fn[A, B] list_foldl((A) -> (B) -> A, A, List[B]) -> A
+
+pub fn[A] list_getLast(List[A]) -> A
+
+pub fn[A] list_getLast_(List[A]) -> A?
+
+pub fn[A] list_head_(List[A]) -> A?
+
+pub fn[A] list_length(List[A]) -> @bigint.BigInt
+
+pub fn[A] list_reverse(List[A]) -> List[A]
+
+pub fn[A] list_reverseAux(List[A], List[A]) -> List[A]
+
+pub fn pairs(List[@bigint.BigInt]) -> List[(@bigint.BigInt, @bigint.BigInt)]
+
+pub fn rectArea(Rect) -> @bigint.BigInt
+
+pub fn rev(List[@bigint.BigInt]) -> List[@bigint.BigInt]
+
+pub fn sameColor(Color, Color) -> Bool
+
+pub fn squares(List[Square]) -> @bigint.BigInt
+
+pub fn[A] totalArea(Shape[A], List[A]) -> @bigint.BigInt
+
+// Errors
+
+// Types and methods
+pub(all) enum Color {
+  Red
+  Green
+  Blue
+}
+
+pub(all) struct Config {
+  name : String
+  size : @bigint.BigInt
+  flag : Bool
+}
+
+pub(all) enum Expr {
+  Num(@bigint.BigInt)
+  Add(Expr, Expr)
+  Mul(Expr, Expr)
+  Neg(Expr)
+}
+
+pub(all) enum List[A] {
+  Nil
+  Cons(A, List[A])
+}
+
+pub(all) struct Rect {
+  w : @bigint.BigInt
+  h : @bigint.BigInt
+}
+
+pub(all) struct Shape[A] {
+  area : (A) -> @bigint.BigInt
+  name : (A) -> String
+}
+
+pub(all) struct Square {
+  s : @bigint.BigInt
+}
+
+// Type aliases
+
+// Traits

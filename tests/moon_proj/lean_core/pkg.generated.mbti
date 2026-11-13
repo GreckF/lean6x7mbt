@@ -1,0 +1,63 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "lean6x7mbt/tests_proj/lean_core"
+
+import {
+  "moonbitlang/core/bigint",
+}
+
+// Values
+pub fn[A] array_isEqvAux(Array[A], Array[A], (A) -> (A) -> Bool, @bigint.BigInt) -> Bool
+
+pub fn[A] instBEqOfDecidableEq((A) -> (A) -> Bool) -> BEq[A]
+
+pub fn[A, B] lean_array_foldl((B) -> (A) -> B, B, Array[A], @bigint.BigInt, @bigint.BigInt) -> B
+
+pub fn[A] lean_array_of_list(List[A]) -> Array[A]
+
+pub fn[A] lean_array_push(Array[A], A) -> Array[A]
+
+pub fn lean_nat_div(@bigint.BigInt, @bigint.BigInt) -> @bigint.BigInt
+
+pub fn lean_nat_sub(@bigint.BigInt, @bigint.BigInt) -> @bigint.BigInt
+
+pub fn[A] list_beq(BEq[A], List[A], List[A]) -> Bool
+
+pub fn[A, B] list_foldl((A) -> (B) -> A, A, List[B]) -> A
+
+pub fn[A, B] list_map((A) -> B, List[A]) -> List[B]
+
+pub fn[A] option_instBEq_beq(BEq[A], A?, A?) -> Bool
+
+pub let unit_unit : Unit
+
+// Errors
+
+// Types and methods
+pub(all) struct BEq[A] {
+  beq : (A) -> (A) -> Bool
+}
+
+pub(all) enum ForInStep[A] {
+  Done(A)
+  Yield(A)
+}
+
+pub(all) enum List[A] {
+  Nil
+  Cons(A, List[A])
+}
+
+pub(all) struct MProd[A, B] {
+  fst : A
+  snd : B
+}
+
+pub(all) struct Std_Legacy_Range {
+  start : @bigint.BigInt
+  stop : @bigint.BigInt
+  step : @bigint.BigInt
+}
+
+// Type aliases
+
+// Traits

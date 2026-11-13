@@ -1,0 +1,4 @@
+import {
+  "lean6x7mbt/tests_proj/proj_a",
+  "lean6x7mbt/tests_proj/lean_core",
+}

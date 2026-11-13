@@ -1,0 +1,13 @@
+name = "lean6x7mbt"
+version = "0.1.0"
+defaultTargets = ["Lean6x7mbt"]
+
+[[lean_lib]]
+name = "Lean6x7mbt"
+
+# test-only modules for the multi-package extraction test (`tests/proj/ProjMain.lean`);
+# not a default target: `tests/run.sh` builds it explicitly
+[[lean_lib]]
+name = "ProjTest"
+srcDir = "tests/proj"
+roots = ["ProjA", "ProjB"]

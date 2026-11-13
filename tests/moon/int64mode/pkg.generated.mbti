@@ -1,0 +1,29 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "lean6x7mbt/tests/int64mode"
+
+// Values
+pub fn arrm(Array[Int64], Int64) -> Int64
+
+pub fn natOps(Int64, Int64) -> Int64
+
+pub fn nat_toUInt32(Int64) -> UInt32
+
+pub fn nat_toUInt64(Int64) -> UInt64
+
+pub fn nat_toUInt8(Int64) -> Byte
+
+pub fn u32m(Int64) -> UInt32
+
+pub fn u64m(Int64) -> UInt64
+
+pub fn u8m(Int64) -> Byte
+
+pub fn un(Byte, UInt32, UInt64) -> Int64
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+
+// Traits

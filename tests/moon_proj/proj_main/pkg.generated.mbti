@@ -1,0 +1,24 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "lean6x7mbt/tests_proj/proj_main"
+
+import {
+  "lean6x7mbt/tests_proj/lean_core",
+  "moonbitlang/core/bigint",
+}
+
+// Values
+pub let areaOfAll : @bigint.BigInt
+
+pub fn chain(@bigint.BigInt, @bigint.BigInt, @bigint.BigInt) -> Result[@bigint.BigInt, String]
+
+pub fn mainLoop(@bigint.BigInt) -> @bigint.BigInt
+
+pub fn[A] std_Legacy_Range_forIn__loop_spec1(@lean_core.Std_Legacy_Range, (@bigint.BigInt) -> (A) -> @lean_core.ForInStep[A], A, @bigint.BigInt) -> A
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+
+// Traits

@@ -1,0 +1,39 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "lean6x7mbt/tests_proj/proj_b"
+
+import {
+  "lean6x7mbt/tests_proj/lean_core",
+  "lean6x7mbt/tests_proj/proj_a",
+  "moonbitlang/core/bigint",
+}
+
+// Values
+pub fn[A] lean6x7mbt_loopForIn_spec4((Unit) -> (A) -> @lean_core.ForInStep[A], A) -> A
+
+pub fn[A, B] list_forIn__loop_spec2(@lean_core.List[A], (A) -> (B) -> @lean_core.ForInStep[B], @lean_core.List[A], B) -> B
+
+pub fn projB_countDown(@bigint.BigInt) -> @bigint.BigInt
+
+pub fn projB_describe(@proj_a.ProjA_Shape) -> @bigint.BigInt
+
+pub fn projB_grow(@proj_a.ProjA_Shape) -> @proj_a.ProjA_Shape
+
+pub fn projB_movePt(@proj_a.ProjA_Pt[@bigint.BigInt]) -> @proj_a.ProjA_Pt[@bigint.BigInt]
+
+pub fn projB_ptSum(@proj_a.ProjA_Pt[@bigint.BigInt]) -> @bigint.BigInt
+
+pub fn projB_pushDoubles(@lean_core.List[@bigint.BigInt]) -> Array[@bigint.BigInt]
+
+pub fn projB_safeDiv(@bigint.BigInt, @bigint.BigInt) -> Result[@bigint.BigInt, String]
+
+pub let projB_shapes : @lean_core.List[@proj_a.ProjA_Shape]
+
+pub fn[A] projB_totalArea(@proj_a.ProjA_HasArea[A], @lean_core.List[A]) -> @bigint.BigInt
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+
+// Traits

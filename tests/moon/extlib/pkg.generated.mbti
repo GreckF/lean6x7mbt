@@ -1,0 +1,118 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "lean6x7mbt/tests/extlib"
+
+import {
+  "moonbitlang/core/bigint",
+}
+
+// Values
+pub const LIMIT : Int32 = 10
+
+pub fn add3(@bigint.BigInt, @bigint.BigInt, @bigint.BigInt) -> @bigint.BigInt
+
+pub fn add_curried_pair((@bigint.BigInt, @bigint.BigInt) -> @bigint.BigInt, @bigint.BigInt) -> @bigint.BigInt
+
+pub fn apply_twice((@bigint.BigInt) -> @bigint.BigInt, @bigint.BigInt) -> @bigint.BigInt
+
+pub fn big_u64(UInt64) -> UInt64
+
+pub fn[T : Describe] describe_all(Array[T]) -> String
+
+pub fn first_byte(Bytes) -> Byte
+
+pub fn first_even(Array[@bigint.BigInt]) -> @bigint.BigInt?
+
+pub let greeting : String
+
+pub fn halve(Double) -> Double
+
+pub fn is_vowel(Char) -> Bool
+
+pub fn labelled(x~ : @bigint.BigInt, y? : @bigint.BigInt) -> @bigint.BigInt
+
+pub async fn later(@bigint.BigInt) -> @bigint.BigInt
+
+pub fn low_byte(UInt32) -> Byte
+
+pub fn make_adder(@bigint.BigInt) -> (@bigint.BigInt) -> @bigint.BigInt
+
+pub fn make_binop() -> (@bigint.BigInt, @bigint.BigInt) -> @bigint.BigInt
+
+pub fn[A, B] map_option(A?, (A) -> B) -> B?
+
+pub let max_items : @bigint.BigInt
+
+pub fn[A] option_or(A?, A) -> A
+
+pub fn parse_digit(String) -> Result[@bigint.BigInt, String]
+
+pub fn range_array(@bigint.BigInt) -> Array[@bigint.BigInt]
+
+pub fn risky(@bigint.BigInt) -> @bigint.BigInt raise Failure
+
+pub fn run_thunk(() -> @bigint.BigInt) -> @bigint.BigInt
+
+pub fn shout(String) -> String
+
+pub fn small_int(Int32) -> Int32
+
+pub fn succ(@bigint.BigInt) -> @bigint.BigInt
+
+pub fn sum_array(Array[@bigint.BigInt]) -> @bigint.BigInt
+
+pub fn swap_pair((@bigint.BigInt, String)) -> (String, @bigint.BigInt)
+
+pub fn[A] tree_size(Tree[A]) -> @bigint.BigInt
+
+pub fn triple(@bigint.BigInt) -> (@bigint.BigInt, @bigint.BigInt, @bigint.BigInt)
+
+pub fn[A] twice(A) -> (A, A)
+
+pub fn unit_fn() -> @bigint.BigInt
+
+// Errors
+pub suberror Oops {
+  Oops(String)
+}
+
+// Types and methods
+pub struct Box[A] {
+  // private fields
+}
+pub fn[A] Box::get(Self[A]) -> A
+pub fn[A] Box::new(A) -> Self[A]
+
+pub struct Counter {
+  // private fields
+}
+pub fn Counter::bump(Self, @bigint.BigInt) -> Self
+pub fn Counter::get(Self) -> @bigint.BigInt
+pub fn Counter::new(@bigint.BigInt) -> Self
+
+pub(all) struct Point {
+  x : @bigint.BigInt
+  y : @bigint.BigInt
+}
+pub fn Point::norm1(Self) -> @bigint.BigInt
+pub impl Describe for Point
+
+pub(all) enum Shape {
+  Circle(Double)
+  Rect(Double, Double)
+  Dot
+}
+pub fn Shape::area(Self) -> Double
+
+pub(all) enum Tree[A] {
+  Leaf
+  Node(Tree[A], A, Tree[A])
+}
+pub fn[A] Tree::depth(Self[A]) -> @bigint.BigInt
+
+// Type aliases
+pub type Index = Int32
+
+// Traits
+pub trait Describe {
+  fn describe(Self) -> String
+}
